@@ -1,0 +1,52 @@
+{
+  "conversations": [
+    {
+      "role": "user",
+      "content": [
+        {
+          "type": "image",
+          "image": "data/retinoblastogemma_images/image1_full.jpg"
+        },
+        {
+          "type": "text",
+          "text": "Return me the bounding boxes of the eyes in this picture"
+        }
+      ]
+    },
+    {
+      "role": "assistant",
+      "content": [
+        {
+          "type": "text",
+          "text": "<bboxes>[[125, 92, 158, 135], [210, 88, 243, 131]]</bboxes>"
+        }
+      ]
+    }
+  ]
+}
+{
+  "conversations": [
+    {
+      "role": "user",
+      "content": [
+        {
+          "type": "image",
+          "image": "data/retinoblastogemma_images/image1_cropped.jpg"
+        },
+        {
+          "type": "text",
+          "text": "Classify whether the eyes in this picture are at risk of retinoblastoma or not. Return only yes or no."
+        }
+      ]
+    },
+    {
+      "role": "assistant",
+      "content": [
+        {
+          "type": "text",
+          "text": "yes"
+        }
+      ]
+    }
+  ]
+}
